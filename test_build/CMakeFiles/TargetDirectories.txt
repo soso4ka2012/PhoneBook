@@ -1,0 +1,5 @@
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/CMakeFiles/PhoneBook.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/CMakeFiles/edit_cache.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/CMakeFiles/rebuild_cache.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/CMakeFiles/PhoneBook_autogen_timestamp_deps.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/CMakeFiles/PhoneBook_autogen.dir

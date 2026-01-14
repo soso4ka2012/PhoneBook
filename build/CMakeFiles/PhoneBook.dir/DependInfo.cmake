@@ -8,11 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/main.cpp" "CMakeFiles/PhoneBook.dir/src/main.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/main.cpp.o.d"
-  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/Contact.cpp" "CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o.d"
-  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/PhoneNumber.cpp" "CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o.d"
-  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/storage/FileStorage.cpp" "CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o.d"
-  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/validation/Validator.cpp" "CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o.d"
+  "" "PhoneBook_autogen/timestamp" "custom" "PhoneBook_autogen/deps"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/mocs_compilation.cpp" "CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/Contact.cpp" "CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp" "CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp" "CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp" "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp" "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp" "CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

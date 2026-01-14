@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+32deedc0c98324b86234cd518f3b28a7 CMakeFiles/PhoneBook_autogen
+32deedc0c98324b86234cd518f3b28a7 CMakeFiles/PhoneBook_autogen_timestamp_deps
+395b4845139356856972394b9d4e20c8 PhoneBook_autogen/timestamp

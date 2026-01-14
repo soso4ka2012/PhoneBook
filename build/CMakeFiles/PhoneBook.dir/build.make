@@ -69,95 +69,137 @@ include CMakeFiles/PhoneBook.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PhoneBook.dir/flags.make
 
-CMakeFiles/PhoneBook.dir/src/main.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
-CMakeFiles/PhoneBook.dir/src/main.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/main.cpp
-CMakeFiles/PhoneBook.dir/src/main.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PhoneBook.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/main.cpp.o -MF CMakeFiles/PhoneBook.dir/src/main.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/main.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/main.cpp
+PhoneBook_autogen/timestamp: /opt/homebrew/opt/qt/share/qt/libexec/moc
+PhoneBook_autogen/timestamp: /opt/homebrew/opt/qt/share/qt/libexec/uic
+PhoneBook_autogen/timestamp: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PhoneBook"
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -E cmake_autogen /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles/PhoneBook_autogen.dir/AutogenInfo.json ""
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -E touch /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/timestamp
 
-CMakeFiles/PhoneBook.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/main.cpp > CMakeFiles/PhoneBook.dir/src/main.cpp.i
+CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: PhoneBook_autogen/mocs_compilation.cpp
+CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o -MF CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/mocs_compilation.cpp
 
-CMakeFiles/PhoneBook.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/main.cpp -o CMakeFiles/PhoneBook.dir/src/main.cpp.s
+CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/mocs_compilation.cpp > CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.i
 
-CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
-CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/Contact.cpp
-CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o -MF CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/Contact.cpp
+CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/mocs_compilation.cpp -o CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/Contact.cpp > CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.i
+CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/Contact.cpp
+CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o -MF CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/Contact.cpp
 
-CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/Contact.cpp -o CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.s
+CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/Contact.cpp > CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.i
 
-CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
-CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/PhoneNumber.cpp
-CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o -MF CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/PhoneNumber.cpp
+CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/Contact.cpp -o CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.s
 
-CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/PhoneNumber.cpp > CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.i
+CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp
+CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o -MF CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp
 
-CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/models/PhoneNumber.cpp -o CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.s
+CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp > CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.i
 
-CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
-CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/storage/FileStorage.cpp
-CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o -MF CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/storage/FileStorage.cpp
+CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp -o CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.s
 
-CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/storage/FileStorage.cpp > CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.i
+CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp
+CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o -MF CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp
 
-CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/storage/FileStorage.cpp -o CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.s
+CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp > CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.i
 
-CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
-CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/validation/Validator.cpp
-CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o -MF CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/validation/Validator.cpp
+CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp -o CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.s
 
-CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/validation/Validator.cpp > CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.i
+CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp
+CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o -MF CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp
 
-CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/validation/Validator.cpp -o CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.s
+CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp > CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.i
+
+CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp -o CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.s
+
+CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp
+CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o -MF CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp
+
+CMakeFiles/PhoneBook.dir/src/gui/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/gui/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp > CMakeFiles/PhoneBook.dir/src/gui/main.cpp.i
+
+CMakeFiles/PhoneBook.dir/src/gui/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/gui/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp -o CMakeFiles/PhoneBook.dir/src/gui/main.cpp.s
+
+CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o: CMakeFiles/PhoneBook.dir/flags.make
+CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o: /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp
+CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o: CMakeFiles/PhoneBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o -MF CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o.d -o CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o -c /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp
+
+CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp > CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.i
+
+CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp -o CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.s
 
 # Object files for target PhoneBook
 PhoneBook_OBJECTS = \
-"CMakeFiles/PhoneBook.dir/src/main.cpp.o" \
-"CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o" \
-"CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o" \
-"CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o" \
-"CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o"
+"CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o" \
+"CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o"
 
 # External object files for target PhoneBook
 PhoneBook_EXTERNAL_OBJECTS =
 
-PhoneBook: CMakeFiles/PhoneBook.dir/src/main.cpp.o
-PhoneBook: CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o
-PhoneBook: CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o
-PhoneBook: CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o
-PhoneBook: CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o
+PhoneBook: CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o
 PhoneBook: CMakeFiles/PhoneBook.dir/build.make
+PhoneBook: /opt/homebrew/opt/qt/lib/QtWidgets.framework/Versions/A/QtWidgets
+PhoneBook: /opt/homebrew/opt/qt/lib/QtGui.framework/Versions/A/QtGui
+PhoneBook: /opt/homebrew/opt/qt/lib/QtCore.framework/Versions/A/QtCore
 PhoneBook: CMakeFiles/PhoneBook.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable PhoneBook"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable PhoneBook"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PhoneBook.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,7 +210,7 @@ CMakeFiles/PhoneBook.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/PhoneBook.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/PhoneBook.dir/clean
 
-CMakeFiles/PhoneBook.dir/depend:
+CMakeFiles/PhoneBook.dir/depend: PhoneBook_autogen/timestamp
 	cd /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles/PhoneBook.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/PhoneBook.dir/depend
 

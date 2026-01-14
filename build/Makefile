@@ -129,125 +129,199 @@ PhoneBook/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/build
 .PHONY : PhoneBook/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+#=============================================================================
+# Target rules for targets named PhoneBook_autogen_timestamp_deps
+
+# Build rule for target.
+PhoneBook_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PhoneBook_autogen_timestamp_deps
+.PHONY : PhoneBook_autogen_timestamp_deps
+
+# fast build rule for target.
+PhoneBook_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook_autogen_timestamp_deps.dir/build.make CMakeFiles/PhoneBook_autogen_timestamp_deps.dir/build
+.PHONY : PhoneBook_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named PhoneBook_autogen
+
+# Build rule for target.
+PhoneBook_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PhoneBook_autogen
+.PHONY : PhoneBook_autogen
+
+# fast build rule for target.
+PhoneBook_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook_autogen.dir/build.make CMakeFiles/PhoneBook_autogen.dir/build
+.PHONY : PhoneBook_autogen/fast
+
+PhoneBook_autogen/mocs_compilation.o: PhoneBook_autogen/mocs_compilation.cpp.o
+.PHONY : PhoneBook_autogen/mocs_compilation.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+PhoneBook_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o
+.PHONY : PhoneBook_autogen/mocs_compilation.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+PhoneBook_autogen/mocs_compilation.i: PhoneBook_autogen/mocs_compilation.cpp.i
+.PHONY : PhoneBook_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+PhoneBook_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.i
+.PHONY : PhoneBook_autogen/mocs_compilation.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+PhoneBook_autogen/mocs_compilation.s: PhoneBook_autogen/mocs_compilation.cpp.s
+.PHONY : PhoneBook_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+PhoneBook_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.s
+.PHONY : PhoneBook_autogen/mocs_compilation.cpp.s
 
-src/models/Contact.o: src/models/Contact.cpp.o
-.PHONY : src/models/Contact.o
+src/core/models/Contact.o: src/core/models/Contact.cpp.o
+.PHONY : src/core/models/Contact.o
 
 # target to build an object file
-src/models/Contact.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.o
-.PHONY : src/models/Contact.cpp.o
+src/core/models/Contact.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.o
+.PHONY : src/core/models/Contact.cpp.o
 
-src/models/Contact.i: src/models/Contact.cpp.i
-.PHONY : src/models/Contact.i
+src/core/models/Contact.i: src/core/models/Contact.cpp.i
+.PHONY : src/core/models/Contact.i
 
 # target to preprocess a source file
-src/models/Contact.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.i
-.PHONY : src/models/Contact.cpp.i
+src/core/models/Contact.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.i
+.PHONY : src/core/models/Contact.cpp.i
 
-src/models/Contact.s: src/models/Contact.cpp.s
-.PHONY : src/models/Contact.s
+src/core/models/Contact.s: src/core/models/Contact.cpp.s
+.PHONY : src/core/models/Contact.s
 
 # target to generate assembly for a file
-src/models/Contact.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/Contact.cpp.s
-.PHONY : src/models/Contact.cpp.s
+src/core/models/Contact.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/Contact.cpp.s
+.PHONY : src/core/models/Contact.cpp.s
 
-src/models/PhoneNumber.o: src/models/PhoneNumber.cpp.o
-.PHONY : src/models/PhoneNumber.o
+src/core/models/PhoneNumber.o: src/core/models/PhoneNumber.cpp.o
+.PHONY : src/core/models/PhoneNumber.o
 
 # target to build an object file
-src/models/PhoneNumber.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.o
-.PHONY : src/models/PhoneNumber.cpp.o
+src/core/models/PhoneNumber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o
+.PHONY : src/core/models/PhoneNumber.cpp.o
 
-src/models/PhoneNumber.i: src/models/PhoneNumber.cpp.i
-.PHONY : src/models/PhoneNumber.i
+src/core/models/PhoneNumber.i: src/core/models/PhoneNumber.cpp.i
+.PHONY : src/core/models/PhoneNumber.i
 
 # target to preprocess a source file
-src/models/PhoneNumber.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.i
-.PHONY : src/models/PhoneNumber.cpp.i
+src/core/models/PhoneNumber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.i
+.PHONY : src/core/models/PhoneNumber.cpp.i
 
-src/models/PhoneNumber.s: src/models/PhoneNumber.cpp.s
-.PHONY : src/models/PhoneNumber.s
+src/core/models/PhoneNumber.s: src/core/models/PhoneNumber.cpp.s
+.PHONY : src/core/models/PhoneNumber.s
 
 # target to generate assembly for a file
-src/models/PhoneNumber.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/models/PhoneNumber.cpp.s
-.PHONY : src/models/PhoneNumber.cpp.s
+src/core/models/PhoneNumber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.s
+.PHONY : src/core/models/PhoneNumber.cpp.s
 
-src/storage/FileStorage.o: src/storage/FileStorage.cpp.o
-.PHONY : src/storage/FileStorage.o
+src/core/storage/FileStorage.o: src/core/storage/FileStorage.cpp.o
+.PHONY : src/core/storage/FileStorage.o
 
 # target to build an object file
-src/storage/FileStorage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.o
-.PHONY : src/storage/FileStorage.cpp.o
+src/core/storage/FileStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o
+.PHONY : src/core/storage/FileStorage.cpp.o
 
-src/storage/FileStorage.i: src/storage/FileStorage.cpp.i
-.PHONY : src/storage/FileStorage.i
+src/core/storage/FileStorage.i: src/core/storage/FileStorage.cpp.i
+.PHONY : src/core/storage/FileStorage.i
 
 # target to preprocess a source file
-src/storage/FileStorage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.i
-.PHONY : src/storage/FileStorage.cpp.i
+src/core/storage/FileStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.i
+.PHONY : src/core/storage/FileStorage.cpp.i
 
-src/storage/FileStorage.s: src/storage/FileStorage.cpp.s
-.PHONY : src/storage/FileStorage.s
+src/core/storage/FileStorage.s: src/core/storage/FileStorage.cpp.s
+.PHONY : src/core/storage/FileStorage.s
 
 # target to generate assembly for a file
-src/storage/FileStorage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/storage/FileStorage.cpp.s
-.PHONY : src/storage/FileStorage.cpp.s
+src/core/storage/FileStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.s
+.PHONY : src/core/storage/FileStorage.cpp.s
 
-src/validation/Validator.o: src/validation/Validator.cpp.o
-.PHONY : src/validation/Validator.o
+src/core/validation/Validator.o: src/core/validation/Validator.cpp.o
+.PHONY : src/core/validation/Validator.o
 
 # target to build an object file
-src/validation/Validator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.o
-.PHONY : src/validation/Validator.cpp.o
+src/core/validation/Validator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o
+.PHONY : src/core/validation/Validator.cpp.o
 
-src/validation/Validator.i: src/validation/Validator.cpp.i
-.PHONY : src/validation/Validator.i
+src/core/validation/Validator.i: src/core/validation/Validator.cpp.i
+.PHONY : src/core/validation/Validator.i
 
 # target to preprocess a source file
-src/validation/Validator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.i
-.PHONY : src/validation/Validator.cpp.i
+src/core/validation/Validator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.i
+.PHONY : src/core/validation/Validator.cpp.i
 
-src/validation/Validator.s: src/validation/Validator.cpp.s
-.PHONY : src/validation/Validator.s
+src/core/validation/Validator.s: src/core/validation/Validator.cpp.s
+.PHONY : src/core/validation/Validator.s
 
 # target to generate assembly for a file
-src/validation/Validator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/validation/Validator.cpp.s
-.PHONY : src/validation/Validator.cpp.s
+src/core/validation/Validator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.s
+.PHONY : src/core/validation/Validator.cpp.s
+
+src/gui/main.o: src/gui/main.cpp.o
+.PHONY : src/gui/main.o
+
+# target to build an object file
+src/gui/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o
+.PHONY : src/gui/main.cpp.o
+
+src/gui/main.i: src/gui/main.cpp.i
+.PHONY : src/gui/main.i
+
+# target to preprocess a source file
+src/gui/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/main.cpp.i
+.PHONY : src/gui/main.cpp.i
+
+src/gui/main.s: src/gui/main.cpp.s
+.PHONY : src/gui/main.s
+
+# target to generate assembly for a file
+src/gui/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/main.cpp.s
+.PHONY : src/gui/main.cpp.s
+
+src/gui/mainwindow.o: src/gui/mainwindow.cpp.o
+.PHONY : src/gui/mainwindow.o
+
+# target to build an object file
+src/gui/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o
+.PHONY : src/gui/mainwindow.cpp.o
+
+src/gui/mainwindow.i: src/gui/mainwindow.cpp.i
+.PHONY : src/gui/mainwindow.i
+
+# target to preprocess a source file
+src/gui/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.i
+.PHONY : src/gui/mainwindow.cpp.i
+
+src/gui/mainwindow.s: src/gui/mainwindow.cpp.s
+.PHONY : src/gui/mainwindow.s
+
+# target to generate assembly for a file
+src/gui/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.s
+.PHONY : src/gui/mainwindow.cpp.s
 
 # Help Target
 help:
@@ -257,22 +331,30 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... PhoneBook_autogen"
+	@echo "... PhoneBook_autogen_timestamp_deps"
 	@echo "... PhoneBook"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/models/Contact.o"
-	@echo "... src/models/Contact.i"
-	@echo "... src/models/Contact.s"
-	@echo "... src/models/PhoneNumber.o"
-	@echo "... src/models/PhoneNumber.i"
-	@echo "... src/models/PhoneNumber.s"
-	@echo "... src/storage/FileStorage.o"
-	@echo "... src/storage/FileStorage.i"
-	@echo "... src/storage/FileStorage.s"
-	@echo "... src/validation/Validator.o"
-	@echo "... src/validation/Validator.i"
-	@echo "... src/validation/Validator.s"
+	@echo "... PhoneBook_autogen/mocs_compilation.o"
+	@echo "... PhoneBook_autogen/mocs_compilation.i"
+	@echo "... PhoneBook_autogen/mocs_compilation.s"
+	@echo "... src/core/models/Contact.o"
+	@echo "... src/core/models/Contact.i"
+	@echo "... src/core/models/Contact.s"
+	@echo "... src/core/models/PhoneNumber.o"
+	@echo "... src/core/models/PhoneNumber.i"
+	@echo "... src/core/models/PhoneNumber.s"
+	@echo "... src/core/storage/FileStorage.o"
+	@echo "... src/core/storage/FileStorage.i"
+	@echo "... src/core/storage/FileStorage.s"
+	@echo "... src/core/validation/Validator.o"
+	@echo "... src/core/validation/Validator.i"
+	@echo "... src/core/validation/Validator.s"
+	@echo "... src/gui/main.o"
+	@echo "... src/gui/main.i"
+	@echo "... src/gui/main.s"
+	@echo "... src/gui/mainwindow.o"
+	@echo "... src/gui/mainwindow.i"
+	@echo "... src/gui/mainwindow.s"
 .PHONY : help
 
 

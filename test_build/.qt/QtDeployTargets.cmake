@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_PhoneBook_FILE /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/test_build/PhoneBook)
+set(__QT_DEPLOY_TARGET_PhoneBook_TYPE EXECUTABLE)

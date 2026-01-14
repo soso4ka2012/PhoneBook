@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.16)
+project(PhoneBookTest)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_PREFIX_PATH "/usr/local/opt/qt")
+
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+
+add_executable(PhoneBookTest src/gui/simple_test.cpp)
+
+target_link_libraries(PhoneBookTest Qt6::Core Qt6::Widgets)
+
+if(APPLE)
+    target_link_libraries(PhoneBookTest "-framework AppKit" "-framework Foundation")
+endif()
