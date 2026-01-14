@@ -1,0 +1,3 @@
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles/PhoneBook.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles/edit_cache.dir
+/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/CMakeFiles/rebuild_cache.dir
