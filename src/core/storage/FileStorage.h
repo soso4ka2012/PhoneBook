@@ -19,6 +19,8 @@ public:
 private:
     QString filename;
     
+    // Вспомогательные методы
+    QString getProjectPath() const;
     Contact parseContactFromString(const std::string& line);
     std::vector<PhoneNumber> parsePhoneNumbers(const std::string& phonesStr);
 };

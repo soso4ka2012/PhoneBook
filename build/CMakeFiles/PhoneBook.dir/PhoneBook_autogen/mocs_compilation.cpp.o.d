@@ -1,9 +1,9 @@
 CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: \
   /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/mocs_compilation.cpp \
-  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/moc_mainwindow.cpp \
-  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/mainwindow.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/moc_contactdialog.cpp \
+  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/contactdialog.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtguiglobal.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qglobal.h \
@@ -971,15 +971,17 @@ CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qbitmap.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QTableWidget \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtablewidget.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtableview.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractitemview.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QLineEdit \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qlineedit.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qframe.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qitemselectionmodel.h \
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextcursor.h \
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextdocument.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qurl.h \
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextformat.h \
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qpen.h \
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextoption.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QComboBox \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qcombobox.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qstyleoption.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qlocale.h \
@@ -990,20 +992,18 @@ CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractslider.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qstyle.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qrubberband.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QPushButton \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QLineEdit \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qlineedit.h \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextcursor.h \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextdocument.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qurl.h \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextformat.h \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qpen.h \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qtextoption.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QComboBox \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qtableview.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qitemselectionmodel.h \
   /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/../core/models/Contact.h \
   /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/../core/models/PhoneNumber.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/iostream \
@@ -1021,6 +1021,13 @@ CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/unistd.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmochelpers.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmocconstants.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/moc_mainwindow.cpp \
+  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/mainwindow.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/../core/storage/FileStorage.h \
   /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/build/PhoneBook_autogen/MXUWEOXILK/../../../src/gui/../core/storage/../models/Contact.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QString \
@@ -1045,7 +1052,4 @@ CMakeFiles/PhoneBook.dir/PhoneBook_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmochelpers.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmocconstants.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/q20algorithm.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h

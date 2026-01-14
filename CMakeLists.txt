@@ -25,6 +25,7 @@ set(CORE_SOURCES
 
 # Файлы GUI
 set(GUI_SOURCES
+    src/gui/contactdialog.cpp
     src/gui/main.cpp
     src/gui/mainwindow.cpp
 )

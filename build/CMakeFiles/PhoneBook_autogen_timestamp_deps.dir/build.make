@@ -68,8 +68,8 @@ include CMakeFiles/PhoneBook_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/PhoneBook_autogen_timestamp_deps: /opt/homebrew/opt/qt/share/qt/libexec/moc
 CMakeFiles/PhoneBook_autogen_timestamp_deps: /opt/homebrew/opt/qt/lib/QtCore.framework/Versions/A/QtCore
-CMakeFiles/PhoneBook_autogen_timestamp_deps: /opt/homebrew/opt/qt/lib/QtWidgets.framework/Versions/A/QtWidgets
 CMakeFiles/PhoneBook_autogen_timestamp_deps: /opt/homebrew/opt/qt/share/qt/libexec/uic
+CMakeFiles/PhoneBook_autogen_timestamp_deps: /opt/homebrew/opt/qt/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 PhoneBook_autogen_timestamp_deps: CMakeFiles/PhoneBook_autogen_timestamp_deps
 PhoneBook_autogen_timestamp_deps: CMakeFiles/PhoneBook_autogen_timestamp_deps.dir/build.make

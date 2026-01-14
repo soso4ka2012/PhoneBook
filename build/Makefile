@@ -275,6 +275,30 @@ src/core/validation/Validator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.s
 .PHONY : src/core/validation/Validator.cpp.s
 
+src/gui/contactdialog.o: src/gui/contactdialog.cpp.o
+.PHONY : src/gui/contactdialog.o
+
+# target to build an object file
+src/gui/contactdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.o
+.PHONY : src/gui/contactdialog.cpp.o
+
+src/gui/contactdialog.i: src/gui/contactdialog.cpp.i
+.PHONY : src/gui/contactdialog.i
+
+# target to preprocess a source file
+src/gui/contactdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.i
+.PHONY : src/gui/contactdialog.cpp.i
+
+src/gui/contactdialog.s: src/gui/contactdialog.cpp.s
+.PHONY : src/gui/contactdialog.s
+
+# target to generate assembly for a file
+src/gui/contactdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PhoneBook.dir/build.make CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.s
+.PHONY : src/gui/contactdialog.cpp.s
+
 src/gui/main.o: src/gui/main.cpp.o
 .PHONY : src/gui/main.o
 
@@ -349,6 +373,9 @@ help:
 	@echo "... src/core/validation/Validator.o"
 	@echo "... src/core/validation/Validator.i"
 	@echo "... src/core/validation/Validator.s"
+	@echo "... src/gui/contactdialog.o"
+	@echo "... src/gui/contactdialog.i"
+	@echo "... src/gui/contactdialog.s"
 	@echo "... src/gui/main.o"
 	@echo "... src/gui/main.i"
 	@echo "... src/gui/main.s"

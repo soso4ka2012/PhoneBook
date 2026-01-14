@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o.d"
   "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o"
   "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o.d"
+  "CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.o"
+  "CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.o.d"
   "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o"
   "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o.d"
   "CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o"

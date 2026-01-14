@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/models/PhoneNumber.cpp" "CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/models/PhoneNumber.cpp.o.d"
   "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/storage/FileStorage.cpp" "CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/storage/FileStorage.cpp.o.d"
   "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/core/validation/Validator.cpp" "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/core/validation/Validator.cpp.o.d"
+  "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/contactdialog.cpp" "CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/gui/contactdialog.cpp.o.d"
   "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/main.cpp" "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/gui/main.cpp.o.d"
   "/Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/mainwindow.cpp" "CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o" "gcc" "CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o.d"
   )

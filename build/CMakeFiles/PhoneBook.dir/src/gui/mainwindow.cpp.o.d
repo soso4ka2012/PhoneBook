@@ -1045,6 +1045,9 @@ CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/soso4ka2012/Documents/учеба/программирование/PhoneBook/src/gui/contactdialog.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qlayout.h \
@@ -1055,5 +1058,12 @@ CMakeFiles/PhoneBook.dir/src/gui/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qheaderview.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QMessageBox \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qdialog.h \
-  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QFileDialog \
+  /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qfiledialog.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qdir.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qdirlisting.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qdatetime.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcalendar.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qfileinfo.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtimezone.h
