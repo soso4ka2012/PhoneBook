@@ -4,6 +4,7 @@
 #include <QTextStream>
 #include <QDir>
 #include <QCoreApplication>
+#include <algorithm>
 
 FileStorage::FileStorage(const QString& filename) 
     : filename(getProjectPath() + "/" + filename) {
@@ -28,8 +29,35 @@ QString FileStorage::getProjectPath() const {
     return projectPath;
 }
 
+bool FileStorage::testConnection() {
+    QFile file(filename);
+    QFileInfo fileInfo(filename);
+    QDir dir = fileInfo.dir();
+    
+    if (!dir.exists()) {
+        if (!dir.mkpath(".")) {
+            std::cerr << "Cannot create directory: " << dir.path().toStdString() << std::endl;
+            return false;
+        }
+    }
+    
+    // Пробуем создать/открыть файл для записи
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
+        std::cerr << "Cannot access file: " << filename.toStdString() << std::endl;
+        return false;
+    }
+    
+    file.close();
+    std::cout << "File storage connection OK" << std::endl;
+    return true;
+}
+
 bool FileStorage::saveContacts(const std::vector<Contact>& contacts) {
-    std::cout << "Saving to: " << filename.toStdString() << std::endl;
+    return saveAllContacts(contacts);
+}
+
+bool FileStorage::saveAllContacts(const std::vector<Contact>& contacts) {
+    std::cout << "Saving " << contacts.size() << " contacts to: " << filename.toStdString() << std::endl;
     
     // Создаем директорию если ее нет
     QFileInfo fileInfo(filename);
@@ -116,6 +144,84 @@ std::vector<Contact> FileStorage::loadContacts() {
     std::cout << "Successfully loaded " << loadedCount << " contacts" << std::endl;
     return contacts;
 }
+
+bool FileStorage::addContact(const Contact& contact) {
+    std::vector<Contact> contacts = loadContacts();
+    contacts.push_back(contact);
+    return saveAllContacts(contacts);
+}
+
+bool FileStorage::updateContact(const Contact& contact) {
+    // В файловом хранилище проще перезаписать все контакты
+    std::vector<Contact> contacts = loadContacts();
+    
+    // Найти контакт по email и обновить
+    bool found = false;
+    for (auto& c : contacts) {
+        if (c.getEmail() == contact.getEmail()) {
+            c = contact;
+            found = true;
+            break;
+        }
+    }
+    
+    // Если не нашли, добавляем как новый
+    if (!found) {
+        contacts.push_back(contact);
+    }
+    
+    return saveAllContacts(contacts);
+}
+
+bool FileStorage::deleteContact(int id) {
+    std::vector<Contact> contacts = loadContacts();
+    
+    if (id >= 0 && id < static_cast<int>(contacts.size())) {
+        contacts.erase(contacts.begin() + id);
+        return saveAllContacts(contacts);
+    }
+    
+    return false;
+}
+
+std::vector<Contact> FileStorage::searchContacts(const std::string& query) {
+    std::vector<Contact> allContacts = loadContacts();
+    std::vector<Contact> results;
+    
+    if (query.empty()) {
+        return allContacts;
+    }
+    
+    std::string queryLower = query;
+    std::transform(queryLower.begin(), queryLower.end(), queryLower.begin(), ::tolower);
+    
+    for (const auto& contact : allContacts) {
+        std::string firstName = contact.getFirstName();
+        std::string lastName = contact.getLastName();
+        std::string email = contact.getEmail();
+        
+        std::transform(firstName.begin(), firstName.end(), firstName.begin(), ::tolower);
+        std::transform(lastName.begin(), lastName.end(), lastName.begin(), ::tolower);
+        std::transform(email.begin(), email.end(), email.begin(), ::tolower);
+        
+        if (firstName.find(queryLower) != std::string::npos ||
+            lastName.find(queryLower) != std::string::npos ||
+            email.find(queryLower) != std::string::npos) {
+            results.push_back(contact);
+        }
+    }
+    
+    return results;
+}
+
+// УДАЛИТЕ или ЗАКОММЕНТИРУЙТЕ этот метод если он не используется
+/*
+int FileStorage::getNextId() const {
+    // Этот метод не может быть const, так как вызывает loadContacts()
+    // Сделаем его неконстантным или удалим
+    return 0;
+}
+*/
 
 // Остальные функции без изменений...
 Contact FileStorage::parseContactFromString(const std::string& line) {

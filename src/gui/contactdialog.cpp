@@ -239,48 +239,52 @@ bool ContactDialog::validateInput() {
     return true;
 }
 
-void ContactDialog::onAccept() {
-    if (!validateInput()) {
-        return;
-    }
-    
-    // Создаем контакт
-    Contact newContact;
-    newContact.setFirstName(firstNameEdit->text().trimmed().toStdString());
-    newContact.setLastName(lastNameEdit->text().trimmed().toStdString());
-    newContact.setMiddleName(middleNameEdit->text().trimmed().toStdString());
-    newContact.setEmail(emailEdit->text().trimmed().toStdString());
-    newContact.setAddress(addressEdit->text().trimmed().toStdString());
-    
-    std::string birthDate = birthDateEdit->text().trimmed().toStdString();
-    if (!birthDate.empty()) {
-        newContact.setBirthDate(birthDate);
-    }
-    
-    // Добавляем телефоны
-    for (int i = 0; i < phoneTable->rowCount(); ++i) {
-        QComboBox *typeCombo = qobject_cast<QComboBox*>(phoneTable->cellWidget(i, 0));
-        QLineEdit *phoneEdit = qobject_cast<QLineEdit*>(phoneTable->cellWidget(i, 1));
-        
-        if (typeCombo && phoneEdit && !phoneEdit->text().trimmed().isEmpty()) {
-            std::string phoneStr = phoneEdit->text().trimmed().toStdString();
-            std::string typeStr = typeCombo->currentText().toStdString();
-            
-            PhoneNumber::Type type = PhoneNumber::MOBILE;
-            if (typeStr == "Home") type = PhoneNumber::HOME;
-            else if (typeStr == "Work") type = PhoneNumber::WORK;
-            
-            PhoneNumber phone(phoneStr, type);
-            if (phone.isValid()) {
-                newContact.addPhoneNumber(phone);
-            }
-        }
-    }
-    
-    contact = newContact;
-    accept();
-}
 
 void ContactDialog::onReject() {
     reject();
+}
+void ContactDialog::onAccept() {
+    try {
+        if (!validateInput()) {
+            return;
+        }
+        
+        // Создаем контакт
+        Contact newContact;
+        newContact.setFirstName(firstNameEdit->text().trimmed().toStdString());
+        newContact.setLastName(lastNameEdit->text().trimmed().toStdString());
+        newContact.setMiddleName(middleNameEdit->text().trimmed().toStdString());
+        newContact.setEmail(emailEdit->text().trimmed().toStdString());
+        newContact.setAddress(addressEdit->text().trimmed().toStdString());
+        
+        std::string birthDate = birthDateEdit->text().trimmed().toStdString();
+        if (!birthDate.empty()) {
+            newContact.setBirthDate(birthDate);
+        }
+        
+        // Добавляем телефоны
+        for (int i = 0; i < phoneTable->rowCount(); ++i) {
+            QComboBox *typeCombo = qobject_cast<QComboBox*>(phoneTable->cellWidget(i, 0));
+            QLineEdit *phoneEdit = qobject_cast<QLineEdit*>(phoneTable->cellWidget(i, 1));
+            
+            if (typeCombo && phoneEdit && !phoneEdit->text().trimmed().isEmpty()) {
+                std::string phoneStr = phoneEdit->text().trimmed().toStdString();
+                std::string typeStr = typeCombo->currentText().toStdString();
+                
+                PhoneNumber::Type type = PhoneNumber::MOBILE;
+                if (typeStr == "Home") type = PhoneNumber::HOME;
+                else if (typeStr == "Work") type = PhoneNumber::WORK;
+                
+                PhoneNumber phone(phoneStr, type);
+                newContact.addPhoneNumber(phone);
+            }
+        }
+        
+        contact = newContact;
+        accept();
+        
+    } catch (const std::exception& e) {
+        QMessageBox::critical(this, "Validation Error", 
+                            QString("Error: %1").arg(e.what()));
+    }
 }
