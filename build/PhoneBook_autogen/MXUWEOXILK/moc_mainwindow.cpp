@@ -7,7 +7,6 @@
 *****************************************************************************/
 
 #include "../../../src/gui/mainwindow.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -44,10 +43,10 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "",
         "onEditContact",
         "onDeleteContact",
-        "onSearch",
-        "onSort",
         "onSaveContacts",
-        "onLoadContacts"
+        "onLoadContacts",
+        "switchToFileStorage",
+        "switchToDatabaseStorage"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -57,13 +56,13 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onDeleteContact'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onSearch'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onSort'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onSaveContacts'
-        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onLoadContacts'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'switchToFileStorage'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'switchToDatabaseStorage'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -91,10 +90,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->onAddContact(); break;
         case 1: _t->onEditContact(); break;
         case 2: _t->onDeleteContact(); break;
-        case 3: _t->onSearch(); break;
-        case 4: _t->onSort(); break;
-        case 5: _t->onSaveContacts(); break;
-        case 6: _t->onLoadContacts(); break;
+        case 3: _t->onSaveContacts(); break;
+        case 4: _t->onLoadContacts(); break;
+        case 5: _t->switchToFileStorage(); break;
+        case 6: _t->switchToDatabaseStorage(); break;
         default: ;
         }
     }

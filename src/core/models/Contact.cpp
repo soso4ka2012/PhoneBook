@@ -3,21 +3,18 @@
 #include "../validation/Validator.h"
 #include <algorithm>
 #include <sstream>
-#include <iomanip> // для std::setw и std::setfill
+#include <iomanip>
 
-// Конструктор по умолчанию
 Contact::Contact() 
     : firstName(""), lastName(""), middleName(""), 
       address(""), birthDate(""), email("") {}
 
-// Конструктор с обязательными полями
 Contact::Contact(const std::string& firstName, const std::string& lastName,
                  const std::string& email, const PhoneNumber& phone)
     : firstName(trim(firstName)), lastName(trim(lastName)), email(trim(email)) {
     phoneNumbers.push_back(phone);
 }
 
-// Сеттер для имени с улучшенной валидацией
 void Contact::setFirstName(const std::string& name) {
     std::string trimmed = trim(name);
     if (Validator::validateName(trimmed)) {
@@ -27,7 +24,6 @@ void Contact::setFirstName(const std::string& name) {
     }
 }
 
-// Сеттер для фамилии с проверкой на пустоту
 void Contact::setLastName(const std::string& name) {
     std::string trimmed = trim(name);
     if (Validator::validateName(trimmed)) {
@@ -37,7 +33,6 @@ void Contact::setLastName(const std::string& name) {
     }
 }
 
-// Сеттер для email
 void Contact::setEmail(const std::string& newEmail) {
     std::string cleaned = Validator::cleanEmail(newEmail);
     if (Validator::validateEmail(cleaned)) {
@@ -47,7 +42,6 @@ void Contact::setEmail(const std::string& newEmail) {
     }
 }
 
-// Добавление телефонного номера
 bool Contact::addPhoneNumber(const PhoneNumber& phone) {
     if (phone.isValid()) {
         phoneNumbers.push_back(phone);
@@ -56,7 +50,6 @@ bool Contact::addPhoneNumber(const PhoneNumber& phone) {
     return false;
 }
 
-// Удаление телефонного номера по индексу
 bool Contact::removePhoneNumber(int index) {
     if (index >= 0 && static_cast<size_t>(index) < phoneNumbers.size()) {
         phoneNumbers.erase(phoneNumbers.begin() + index);
@@ -65,24 +58,19 @@ bool Contact::removePhoneNumber(int index) {
     return false;
 }
 
-// Проверка, что контакт имеет все обязательные поля
 bool Contact::isValid() const {
     return hasRequiredFields();
 }
 
-// Проверка обязательных полей
 bool Contact::hasRequiredFields() const {
-    // Проверяем, что обязательные поля не пустые
     if (firstName.empty() || lastName.empty() || email.empty()) {
         return false;
     }
     
-    // Проверяем, что есть хотя бы один номер телефона
     if (phoneNumbers.empty()) {
         return false;
     }
     
-    // Проверяем, что все номера валидны
     for (const auto& phone : phoneNumbers) {
         if (!phone.isValid()) {
             return false;
@@ -110,8 +98,7 @@ std::string Contact::toString() const {
     
     ss << "\nPhone Numbers:";
     
-    // Проходим по всем номерам и группируем вручную
-    bool firstOfType[3] = {true, true, true}; // для HOME, WORK, MOBILE
+    bool firstOfType[3] = {true, true, true};
     
     for (const auto& phone : phoneNumbers) {
         std::string typeStr = phone.getTypeString();
@@ -146,7 +133,6 @@ std::string Contact::toString() const {
     return ss.str();
 }
 
-// Для сохранения в файл (формат CSV)
 std::string Contact::toFileString() const {
     std::stringstream ss;
     ss << firstName << ";" 
@@ -156,7 +142,6 @@ std::string Contact::toFileString() const {
        << birthDate << ";" 
        << email << ";";
     
-    // Сохраняем номера телефонов
     for (size_t i = 0; i < phoneNumbers.size(); ++i) {
         if (i > 0) ss << ",";
         ss << phoneNumbers[i].toFileString();
@@ -165,19 +150,16 @@ std::string Contact::toFileString() const {
     return ss.str();
 }
 
-// Форматирование даты в dd-mm-yyyy
 std::string Contact::getFormattedBirthDate() const {
     if (birthDate.empty()) {
         return "";
     }
     
-    // Парсим дату из формата YYYY-MM-DD
     int year, month, day;
     char dash1, dash2;
     std::istringstream ss(birthDate);
     ss >> year >> dash1 >> month >> dash2 >> day;
     
-    // Форматируем в DD-MM-YYYY
     std::stringstream formatted;
     formatted << std::setw(2) << std::setfill('0') << day << "-"
               << std::setw(2) << std::setfill('0') << month << "-"
@@ -186,19 +168,17 @@ std::string Contact::getFormattedBirthDate() const {
     return formatted.str();
 }
 
-// Статический метод создания контакта
 Contact Contact::createContact(const std::string& firstName, const std::string& lastName,
                               const std::string& email, const PhoneNumber& phone) {
     return Contact(firstName, lastName, email, phone);
 }
 
-// Удаление пробелов в начале и конце строки
 std::string Contact::trim(const std::string& str) const {
     size_t start = str.find_first_not_of(" \t\n\r");
     size_t end = str.find_last_not_of(" \t\n\r");
     
     if (start == std::string::npos) {
-        return ""; // Строка состоит только из пробелов
+        return "";
     }
     
     return str.substr(start, end - start + 1);
